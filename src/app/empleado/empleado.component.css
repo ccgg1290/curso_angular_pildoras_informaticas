@@ -1,5 +1,17 @@
 p{
 
  background-color: red;
+ 
 
 }
+
+
+div {
+
+   
+    border: solid;
+    border-color: deeppink;
+    background: gold;
+    width: 500px;
+
+  }
