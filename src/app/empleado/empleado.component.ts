@@ -12,7 +12,7 @@ export class EmpleadoComponent implements OnInit {
   // es poisble acceder a estas variables desde otra clase, 
   // pero tabn podemos encapsula rlos datos y acceder a estos a traves de metodos getter setter
   private edad=5;
-  empresa="Movii";
+  //empresa="Movii";
 
   
  getEdad(){
@@ -20,6 +20,7 @@ export class EmpleadoComponent implements OnInit {
   return this.edad;
  }
 
+ llamaEmpresa(value:string){}
 
   constructor() { }
 
