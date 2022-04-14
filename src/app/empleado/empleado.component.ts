@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./empleado.component.css']
 })
 export class EmpleadoComponent implements OnInit {
+<<<<<<< HEAD
   nombre="cristian ";
   apellido="gualtero";
   // es poisble acceder a estas variables desde otra clase, 
@@ -19,6 +20,8 @@ export class EmpleadoComponent implements OnInit {
   return this.edad;
  }
 
+=======
+>>>>>>> f470f0865062e9c595fee8453d89d7f47dd55fc9
 
   constructor() { }
 
