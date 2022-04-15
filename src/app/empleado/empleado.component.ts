@@ -20,7 +20,7 @@ export class EmpleadoComponent implements OnInit {
   return this.edad;
  }
 
- llamaEmpresa(value:string){}
+  //llamaEmpresa(value:string){} esta funcion la usamos en video 8 eevento con boton
 
   constructor() { }
 

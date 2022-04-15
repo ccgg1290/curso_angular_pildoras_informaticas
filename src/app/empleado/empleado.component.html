@@ -14,14 +14,14 @@
    <!-- p>Empressa del empleado : {{empresa}}</p-->
    <p>Empressa del empleado : {{empresa.value}}</p>
    
-   <!-- con el # refernciamos el cuadro de texto-->
-   Intropduce la empresa: <input type="text" #empresa>
+   <!-- con el # creamos variable de plantilla  refernciamos el cuadro de texto con key up desencadenamos la accion despues de levantar una tecla-->
+   Introduce la empresa: <input type="text" #empresa (keyup)="0">
 
    <br>
    <br>
 
 
-   <input type="button" value="Dale!" (click)="llamaEmpresa(empresa.value)">
+   <!--input type="button" value="Dale!" (click)="llamaEmpresa(empresa.value)"   este boton lo usamos en video 8 interpolacion 2-->
 
    <br>
    <br>
