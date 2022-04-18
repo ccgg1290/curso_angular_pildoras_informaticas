@@ -24,11 +24,17 @@ export class EmpleadoComponent implements OnInit {
     this.usuRegistrado=false;
   }
 
-  setusuarioRegistrado(){
+  setusuarioRegistrado(evento: Event){
    // alert ("El usuario se acaba de registrar");
-   this.textoDeregistro="El usuario se acaba de registrar"
+   //this.textoDeregistro="El usuario se acaba de registrar"
+    //alert(evento.target)
+    //debenos castar el objeto html para acceder a sus propiedades
+    if((<HTMLInputElement>evento.target).value=="si"){
+    this.textoDeregistro="El usuario se acaba registrado";
+    }else{
+     this.textoDeregistro="El usuario no se ha registrado";
+    }
   }
-
 
  getEdad(){
   // metodo getter

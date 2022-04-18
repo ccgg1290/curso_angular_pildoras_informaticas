@@ -23,7 +23,10 @@
    <br>
    
 
-   Registrado  <input type="checkbox" name="" id="registro" [checked]="usuRegistrado" (click)="setusuarioRegistrado()">
+   Registrado  <input type="radio" name="nRegistro" value="si" id="registro" [checked]="usuRegistrado" (click)="setusuarioRegistrado($event)">
+   <br>
+   No registrado: <input type="radio" name="nRegistro" value="no" (click)="setusuarioRegistrado($event)">
+
 
    {{getRegistrousuario()}}
 
