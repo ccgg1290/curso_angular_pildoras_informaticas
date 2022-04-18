@@ -14,7 +14,22 @@ export class EmpleadoComponent implements OnInit {
   private edad=5;
   //empresa="Movii";
 
+  habilitacionCuadro=false;
+
+  usuRegistrado=true;
+
+  textoDeregistro="No hay nadie registrado"
   
+  getRegistrousuario(){
+    this.usuRegistrado=false;
+  }
+
+  setusuarioRegistrado(){
+   // alert ("El usuario se acaba de registrar");
+   this.textoDeregistro="El usuario se acaba de registrar"
+  }
+
+
  getEdad(){
   // metodo getter
   return this.edad;

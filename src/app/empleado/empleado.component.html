@@ -15,11 +15,17 @@
    <p>Empressa del empleado : {{empresa.value}}</p>
    
    <!-- con el # creamos variable de plantilla  refernciamos el cuadro de texto con key up desencadenamos la accion despues de levantar una tecla-->
-   Introduce la empresa: <input type="text" #empresa (keyup)="0">
+   Introduce la empresa: <input type="text" #empresa (keyup)="0" [disabled]="habilitacionCuadro">
 
    <br>
    <br>
+   {{textoDeregistro}}
+   <br>
+   
 
+   Registrado  <input type="checkbox" name="" id="registro" [checked]="usuRegistrado" (click)="setusuarioRegistrado()">
+
+   {{getRegistrousuario()}}
 
    <!--input type="button" value="Dale!" (click)="llamaEmpresa(empresa.value)"   este boton lo usamos en video 8 interpolacion 2-->
 
